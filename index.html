@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Meditation Community — Learn, Practice, Grow</title>
+<meta name="description" content="Join 40,000+ people finding calm together. Live classes, guided practices, and a community that keeps you coming back. Start free, no card required." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="scroll-prog" id="scrollProg"></div>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="The Meditation Community home">
+      <img src="assets/icon-blue.png" alt="" />
+      <span class="brand-text">The Meditation Community<small>LEARN · PRACTICE · GROW</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#inside">What is inside</a>
+      <a href="#teachers">Teachers</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener" class="btn btn-primary" data-magnetic>Join free</a>
+    </div>
+  </div>
+</nav>
+
+<span id="top"></span>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero section" data-screen-label="Hero">
+  <!-- parallax clouds -->
+  <div class="cloud cloud-1" data-speed="0.18"><svg viewBox="0 0 220 90"><path class="cloud-fill" d="M40 80c-22 0-38-13-38-30 0-15 12-26 28-27 4-15 18-23 33-23 16 0 30 10 34 25 3-1 6-1 9-1 17 0 30 12 30 27 0 16-14 29-33 29z"/></svg></div>
+  <div class="cloud cloud-2" data-speed="0.30"><svg viewBox="0 0 280 110"><path class="cloud-fill" d="M55 100C28 100 6 84 6 62 6 43 22 30 42 30c5-18 23-28 42-28 20 0 38 13 43 32 4-1 8-2 12-2 22 0 39 15 39 34 0 21-18 32-41 32z"/></svg></div>
+  <div class="cloud cloud-3" data-speed="0.45"><svg viewBox="0 0 180 80"><path class="cloud-fill" d="M36 72C16 72 2 60 2 44 2 30 14 20 29 20c4-12 15-18 27-18 13 0 24 8 28 20 2-1 5-1 7-1 14 0 25 10 25 22 0 14-12 23-29 23z"/></svg></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal">A calmer way to live, together</span>
+      <h1 class="h-display reveal d1">Find your calm.<br /><span class="serif-accent">Keep</span> it for life.</h1>
+      <p class="lead reveal d2">Learn Mindfulness-based Stillness Meditation with Dr Ian Gawler and senior teachers —<br />LIVE sessions, guided practice, and a warm community that keeps you coming back. Begin free with Deep Relaxation.</p>
+      <div class="hero-cta reveal d3">
+        <a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-magnetic>
+          Join the community free
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="btn btn-ghost btn-lg" id="tryBreath">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+          Try a 1 minute breath
+        </button>
+      </div>
+      <div class="avatar-proof reveal d4">
+        <div class="avatars">
+          <span style="background-image:url(assets/teachers/ian-gawler.jpg)"></span>
+          <span style="background-image:url(assets/teachers/daniel-traini.jpg)"></span>
+          <span style="background-image:url(assets/teachers/melissa-borich.jpg)"></span>
+          <span style="background-image:url(assets/teachers/peta-mcgrath.jpg)"></span>
+          <span style="background-image:url(assets/teachers/lisa-patamisi.jpg)"></span>
+        </div>
+        <div class="proof-text">
+          <div>Guided by <b>Dr Ian Gawler</b> &amp; senior teachers</div>
+          <div class="muted" style="font-size:.86rem; margin-top:2px">Hundreds of members learning together</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="orb-stage reveal d2">
+      <div class="orb-ring pulse"></div>
+      <div class="orb-ring pulse r2"></div>
+      <div class="orb-ring pulse r3"></div>
+      <div class="orb" id="heroOrb">
+        <div class="orb-core">
+          <img src="assets/icon-white.png" alt="The Meditation Community mark" />
+          <div class="breath-word" id="heroBreathWord">Breathe in</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloud-divider"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path fill="#ffffff" d="M0,70 C120,30 220,30 330,55 C430,78 520,40 640,52 C760,64 820,96 950,86 C1070,77 1140,44 1280,58 C1360,66 1410,78 1440,72 L1440,110 L0,110 Z"/></svg></div>
+</header>
+
+<!-- ===================== STATS ===================== -->
+<section class="section" style="padding-block: clamp(56px,8vw,90px)">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="num">Hundreds</div><div class="label">Members and growing</div></div>
+      <div class="stat reveal d1"><div class="num" data-count="10">0</div><div class="label">Experienced teachers</div></div>
+      <div class="stat reveal d2"><div class="num">Free</div><div class="label">To begin · no card</div></div>
+      <div class="stat reveal d3"><div class="num">1981</div><div class="label">Dr Gawler teaching since</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="section" id="how" style="background: linear-gradient(180deg,#fff, var(--sky-pale));" data-screen-label="How it works">
+  <div class="wrap">
+    <div style="max-width:640px">
+      <span class="eyebrow reveal">How it works</span>
+      <h2 class="h2 reveal d1" style="margin-top:14px">Three gentle steps. <br /><span class="serif-accent" style="color:var(--blue-deep)">It is literally our name.</span></h2>
+      <p class="lead reveal d2" style="margin-top:16px">No 30-day challenge to fail. No streak to break. Just a rhythm that fits the life you already have.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal d1">
+        <div class="glow"></div>
+        <div class="step-no">01</div>
+        <div class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6c3-1.5 6-1.5 9 0v13c-3-1.5-6-1.5-9 0z"/><path d="M21 6c-3-1.5-6-1.5-9 0v13c3-1.5 6-1.5 9 0z"/></svg></div>
+        <h3 class="h3">Learn</h3>
+        <p>Short, beautiful lessons demystify meditation — from your very first breath to the deep stuff. Watch, read, or just listen.</p>
+      </article>
+      <article class="step reveal d2">
+        <div class="glow"></div>
+        <div class="step-no">02</div>
+        <div class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2" stroke-linecap="round"/></svg></div>
+        <h3 class="h3">Practice</h3>
+        <p>Begin free with Deep Relaxation, then join live teaching, discussion and practice sessions. 3 minutes or 30 — there is always one that fits.</p>
+      </article>
+      <article class="step reveal d3">
+        <div class="glow"></div>
+        <div class="step-no">03</div>
+        <div class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V9M12 9c0-3 2-5 5-5 0 3-2 5-5 5zM12 13c0-3-2-5-5-5 0 3 2 5 5 5z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="h3">Grow</h3>
+        <p>Reflect, track how you feel, and grow alongside real people in circles, challenges, and conversations that go beyond the cushion.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT'S INSIDE ===================== -->
+<section class="section" id="inside" data-screen-label="What is inside">
+  <div class="wrap">
+    <div class="features-head">
+      <div>
+        <span class="eyebrow reveal">Everything inside</span>
+        <h2 class="h2 reveal d1" style="margin-top:14px">One membership.<br />A whole practice, supported.</h2>
+      </div>
+      <p class="lead reveal d2">Most apps hand you a library and wish you luck. We give you the structure, the teachers, and the people — the things that actually make it stick.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="fcard span-7 tall reveal">
+        <div>
+          <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/><path d="M10 9l5 2-5 2z" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Live teaching &amp; practice sessions</h3>
+          <p>Relaxation, mindfulness, meditation, imagery and contemplation — live with senior teachers, in real time. Show up, settle in, and you are never practicing alone.</p>
+        </div>
+        <img src="assets/screenshot-live-schedule.jpg" alt="The Meditation Community live session calendar showing daily morning sessions, teaching circles and discussion groups" loading="lazy" style="width:100%; height:180px; object-fit:cover; object-position:top; border-radius:var(--r-md); border:1px solid var(--line); margin-top:24px; box-shadow:var(--shadow-sm)" />
+      </article>
+
+      <article class="fcard span-5 reveal d1">
+        <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h3>Recordings, whenever you need them</h3>
+        <p>Miss a session, or want to sit with a favourite again? Every practice and teaching is recorded, so the one you need is always a tap away.</p>
+      </article>
+
+      <article class="fcard span-5 reveal d1">
+        <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></div>
+        <h3>The Healing Circle &amp; community</h3>
+        <p>A warm, welcoming space to share wins and wobbles. The gentle accountability that turns a habit into a way of being.</p>
+      </article>
+
+      <article class="fcard span-7 reveal">
+        <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Self-paced courses &amp; the MbSM method</h3>
+        <p>Go deeper at your own pace with structured courses in Mindfulness-based Stillness Meditation — the method Dr Ian Gawler has taught since 1981.</p>
+        <img src="assets/screenshot-courses.jpg" alt="Self-paced course library including Deep Relaxation, The Next Steps, guided practices and recorded teachings" loading="lazy" style="width:100%; height:120px; object-fit:cover; object-position:top; border-radius:var(--r-md); border:1px solid var(--line); margin-top:20px; box-shadow:var(--shadow-sm)" />
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BREATHE (SIGNATURE) ===================== -->
+<section class="section breathe" id="breathe" data-screen-label="Breathe with us">
+  <div class="cloud-divider top"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path fill="#ffffff" d="M0,70 C120,30 220,30 330,55 C430,78 520,40 640,52 C760,64 820,96 950,86 C1070,77 1140,44 1280,58 C1360,66 1410,78 1440,72 L1440,110 L0,110 Z"/></svg></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Try it right now</span>
+    <h2 class="h2 reveal d1">Do not take our word for it. Take a breath.</h2>
+    <p class="lead reveal d2">Press start and follow the orb for one minute. This is the simplest practice we teach — and it works in the next sixty seconds.</p>
+
+    <div class="breath-stage reveal d2">
+      <svg class="breath-ring" viewBox="0 0 340 340">
+        <circle cx="170" cy="170" r="160"/>
+        <circle class="prog" id="breathProg" cx="170" cy="170" r="160" transform="rotate(-90 170 170)"/>
+      </svg>
+      <div class="breath-glow out" id="breathGlow"></div>
+      <div class="breath-orb out" id="breathOrb">
+        <span style="font-weight:800; font-size:2rem; color:#0a6bc0" id="breathTimer">1:00</span>
+      </div>
+    </div>
+
+    <div class="breath-phase reveal" id="breathPhase">Ready when you are</div>
+    <div class="breath-count reveal" id="breathCount">Box breathing · 4 seconds each</div>
+
+    <div style="margin-top:22px" class="reveal">
+      <div class="breath-pattern" id="breathPattern">
+        <button data-pat="box" class="active">Box · 4-4-4-4</button>
+        <button data-pat="relax">Relax · 4-7-8</button>
+        <button data-pat="calm">Calm · 5-5</button>
+      </div>
+    </div>
+
+    <div class="breath-controls reveal">
+      <button class="btn btn-white btn-lg" id="breathStart">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        Begin
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT US ===================== -->
+<section class="section" id="about" data-screen-label="About us">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="eyebrow reveal">About us</span>
+      <h2 class="h2 reveal d1" style="margin-top:14px">A community built on four decades of teaching.</h2>
+      <p class="lead reveal d2" style="margin-top:16px">The Meditation Community grew from the work of Dr Ian Gawler OAM — a pioneer of meditation in Australia who has taught Mindfulness-based Stillness Meditation since 1981, and trained meditation teachers since 1988.</p>
+      <p class="reveal d2" style="margin-top:14px; line-height:1.7; color:var(--ink-faint)">In 2025, Ian and Daniel Traini founded The Meditation Community to bring that lineage online: a warm, welcoming home where anyone can learn, practice and grow — with live sessions led by senior teachers, recordings for whenever life gets in the way, and the Healing Circle for those meditating through illness. What makes us different is not an app or an algorithm. It is people, practicing together.</p>
+      <div class="about-points reveal d3">
+        <div><b>Since 1981</b><span>Dr Gawler teaching meditation</span></div>
+        <div><b>MbSM</b><span>One shared, proven method</span></div>
+        <div><b>10 teachers</b><span>Many voices, one community</span></div>
+      </div>
+    </div>
+    <div class="founder-cards">
+      <figure class="founder reveal d1">
+        <img src="assets/teachers/ian-gawler.jpg" alt="Dr Ian Gawler" loading="lazy" />
+        <figcaption><b>Dr Ian Gawler OAM</b><span>Founder</span></figcaption>
+      </figure>
+      <figure class="founder reveal d2">
+        <img src="assets/teachers/daniel-traini.jpg" alt="Daniel Traini" loading="lazy" />
+        <figcaption><b>Daniel Traini</b><span>Co-founder</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEACHERS ===================== -->
+<section class="section" id="teachers" data-screen-label="Teachers">
+  <div class="wrap">
+    <div style="max-width:680px">
+      <span class="eyebrow reveal">Your teachers</span>
+      <h2 class="h2 reveal d1" style="margin-top:14px">Guided by Dr Ian Gawler &amp; a circle of senior teachers.</h2>
+      <p class="lead reveal d2" style="margin-top:16px">Decades of practice between them and one shared method — Mindfulness-based Stillness Meditation. Tap any teacher to read their story.</p>
+    </div>
+    <div class="teachers-grid" id="teachersGrid">
+
+      <button class="teacher reveal" data-img="assets/teachers/ian-gawler.jpg" data-name="Dr Ian Gawler OAM" data-role="Co-founder · Founding teacher" data-cred="BVSc, MCounsHS">
+        <div class="portrait">
+          <img src="assets/teachers/ian-gawler.jpg" alt="Dr Ian Gawler" loading="lazy" />
+          <span class="t-pill">Co-founder</span>
+          <div class="t-overlay"><h3>Dr Ian Gawler</h3><div class="role">Founding teacher</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Ian has studied meditation with Dr Ainslie Meares, Sogyal Rinpoche and many other masters, particularly in the Tibetan Dzogchen tradition.</p><p>A Founding Patron of Meditation Australia, he helped establish Centres for Contemplative Studies at Melbourne and Monash Universities. Ian has been teaching meditation since 1981, and teachers of meditation since 1988.</p><p>He is the author of several international best-selling meditation books, including <em>Blue Sky Mind</em>.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/daniel-traini.jpg" data-name="Daniel Traini" data-role="Co-founder" data-cred="">
+        <div class="portrait">
+          <img src="assets/teachers/daniel-traini.jpg" alt="Daniel Traini" loading="lazy" />
+          <span class="t-pill">Co-founder</span>
+          <div class="t-overlay"><h3>Daniel Traini</h3><div class="role">Co-founder</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Daniel began meditating in 2009 through the Vipassana tradition as taught by S.N. Goenka. Since then he has explored mindfulness, Shamatha, Transcendental Meditation, Mindful Self-Compassion and Compassion Cultivation Training.</p><p>He completed the three modules of Teacher Training with Ian and Ruth Gawler in 2024–25, and co-founded The Meditation Community with Ian in 2025. Daniel is also a volunteer teacher with New Acropolis Australia, a school of philosophy.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/peta-mcgrath.jpg" data-name="Peta McGrath" data-role="Teacher" data-cred="BA, Grad Dip Ed, MEd">
+        <div class="portrait">
+          <img src="assets/teachers/peta-mcgrath.jpg" alt="Peta McGrath" loading="lazy" />
+          <div class="t-overlay"><h3>Peta McGrath</h3><div class="role">Teacher</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Peta’s work background is in leadership in adult education.</p><p>Having meditated for over 30 years, Peta started teaching MbSM to staff in her workplace 9 years ago after training with Ian and Ruth Gawler. These days she continues to teach meditation in the workplace as well as more broadly.</p><p>Peta is registered with Meditation Australia and is a Meditation Australia Council Member.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/marie-omalley.jpg" data-name="Marie O&#39;Malley" data-role="Teacher" data-cred="">
+        <div class="portrait">
+          <img src="assets/teachers/marie-omalley.jpg" alt="Marie O'Malley" loading="lazy" />
+          <div class="t-overlay"><h3>Marie O'Malley</h3><div class="role">Teacher</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Marie brings to meditation practice and teaching valuable experience in life and many years of working in care and welfare that supports the development and growth meditation brings into our lives.</p><p>Marie was introduced to meditation 20 years ago through Tibetan Buddhism, then programs at the Gawler Foundation.</p><p>She understands the challenge of balancing busy lives with ensuring time for self-care through meditation practice.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/melissa-borich.jpg" data-name="Melissa Borich" data-role="Senior Teacher" data-cred="Registered Yoga Therapist">
+        <div class="portrait">
+          <img src="assets/teachers/melissa-borich.jpg" alt="Melissa Borich" loading="lazy" />
+          <div class="t-overlay"><h3>Melissa Borich</h3><div class="role">Senior Teacher</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Melissa Borich is a Registered Yoga Therapist and Senior Teacher with Yoga Australia, and a Senior Teacher with Meditation Australia.</p><p>With over 25 years of meditation practice, she teaches classes, courses and retreats, offers one-to-one sessions, and supports the training and mentoring of meditation teachers.</p><p>She is passionate about sharing meditation and supporting others to experience its depth, stillness and ease.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/lisa-patamisi.jpg" data-name="Lisa Patamisi" data-role="Teacher · Nurse" data-cred="BNurs, GCertPubHealth">
+        <div class="portrait">
+          <img src="assets/teachers/lisa-patamisi.jpg" alt="Lisa Patamisi" loading="lazy" />
+          <div class="t-overlay"><h3>Lisa Patamisi</h3><div class="role">Teacher · Nurse</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Lisa was introduced to Mindfulness-based Stillness Meditation in 1994 through Dr Ian Gawler after a cancer diagnosis. In 2024 she completed formal meditation teacher training with Dr Gawler.</p><p>Lisa’s nursing experience includes medical, midwifery and mental health. This work, and personal experience, confirms to her the connectedness between physical and mental health and the benefits of meditation.</p><p>Lisa is passionate about making meditation accessible to all.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/mel-crow.jpg" data-name="Mel Crow" data-role="Teacher · Wellness Coach" data-cred="">
+        <div class="portrait">
+          <img src="assets/teachers/mel-crow.jpg" alt="Mel Crow" loading="lazy" />
+          <div class="t-overlay"><h3>Mel Crow</h3><div class="role">Teacher · Wellness Coach</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Melissa became interested in meditation in the eighties. She worked at The Gawler Foundation for 10 years, deepening her passion further.</p><p>She completed meditation teacher training in 2017 and again recently, and also works in Mental Health and Wellness Coaching.</p><p>Mel is passionate about supporting others to enhance their inner resources and find more contentment and joy in life.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/saurabh-mishra.jpg" data-name="Saurabh Mishra" data-role="Teacher" data-cred="">
+        <div class="portrait">
+          <img src="assets/teachers/saurabh-mishra.jpg" alt="Saurabh Mishra" loading="lazy" />
+          <div class="t-overlay"><h3>Saurabh Mishra</h3><div class="role">Teacher</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Saurabh is an entrepreneur whose ventures span health, education and community impact, including Vyatra, which connects classrooms to iconic global places live.</p><p>He has long served as a palliative care volunteer and is a trained Hindustani classical vocalist. He is a committed meditator and practitioner of Kriya Yoga, with a keen awareness of himself as an infinitesimal expression of the divine, blissful cosmic consciousness.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/lell-coombes.jpg" data-name="Lesley ‘Lell’ Coombes" data-role="Teacher" data-cred="">
+        <div class="portrait">
+          <img src="assets/teachers/lell-coombes.jpg" alt="Lesley Coombes" loading="lazy" />
+          <div class="t-overlay"><h3>Lell Coombes</h3><div class="role">Teacher</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>“Lell” has a background of 35+ years in theatre and has been practicing meditation for six years. She has studied with Drs Ian &amp; Ruth Gawler, Melissa Borich, Murray Paterson and Pauline McKinnon.</p><p>Lell practices Kriya Yoga and Nadi Prana daily and is studying to become an EMPR practitioner. She has also practiced Qi Gong, Tai Chi and Mindfulness for many years.</p></div>
+      </button>
+
+      <button class="teacher reveal" data-img="assets/teachers/brigitte-house.jpg" data-name="Brigitte House" data-role="Teacher · Psychotherapist" data-cred="MCouns, Dip CSW, BAppSc">
+        <div class="portrait">
+          <img src="assets/teachers/brigitte-house.jpg" alt="Brigitte House" loading="lazy" />
+          <div class="t-overlay"><h3>Brigitte House</h3><div class="role">Teacher · Psychotherapist</div><span class="t-readmore">Read bio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+        <div class="t-bio-data"><p>Since her early 20s Brigitte has studied and practiced meditation, predominantly via Tibetan Buddhism and Thich Nhat Hanh.</p><p>A diagnosis of cancer at 30 propelled her deeper into practice for healing. She engaged closely with Ian and Ruth Gawler and specifically ‘lifestyle medicine’, and now enjoys a complete recovery.</p><p>Brigitte was then naturally drawn to train as a teacher of MbSM, and now works as a psychotherapist.</p></div>
+      </button>
+
+    </div>
+
+    <!-- BECOME A TEACHER -->
+    <div class="teach-cta reveal" id="become-a-teacher">
+      <div class="teach-copy">
+        <span class="eyebrow">Become a teacher</span>
+        <h3 class="h3" style="margin-top:12px">Would you like to share the practice?</h3>
+        <p>If you would love to share meditation with others, we would love to hear from you. Leave an expression of interest and we will be in touch about the path to teaching with us.</p>
+      </div>
+      <form class="mc-form" name="become-a-teacher" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="become-a-teacher" />
+        <p class="hp-field"><label>Do not fill this out: <input name="bot-field" /></label></p>
+        <div class="field-row">
+          <label class="field"><span>Name</span><input type="text" name="name" required placeholder="Your name" /></label>
+          <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com" /></label>
+        </div>
+        <label class="field"><span>A few words about you</span><textarea name="message" rows="3" required placeholder="Your practice, and why you would like to teach"></textarea></label>
+        <button type="submit" class="btn btn-primary" data-magnetic>Express interest</button>
+        <p class="form-success" hidden>Thank you — we have received your expression of interest and will be in touch soon.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="section" id="stories" style="background: linear-gradient(180deg,var(--sky-pale),#fff)" data-screen-label="Stories">
+  <div class="wrap">
+    <div style="text-align:center; max-width:720px; margin:0 auto">
+      <span class="eyebrow reveal">Member stories</span>
+      <h2 class="h2 reveal d1" style="margin-top:14px">The habit that finally stuck.</h2>
+    </div>
+    <div class="testi-rail">
+      <article class="testi reveal d1">
+        <div class="quote-mark">“</div>
+        <p class="quote">"To me the Meditation Community is a wonderful safe supportive place of learning. All of the times we practice together there is a deep sense of safety, compassion and professionalism. This comes from the guidance of the teachers led by the vast wealth of Ian's experience and wisdom."</p>
+        <div class="who">
+          <div class="pic pic-initial">W</div>
+          <div><div class="name">Wendy</div><div class="meta">Member · Australia</div></div>
+        </div>
+      </article>
+      <article class="testi reveal d2">
+        <div class="quote-mark">“</div>
+        <p class="quote">"After an incurable cancer diagnosis, I started practising meditation with the Allevi8 app followed by the Meditation Community app. It's been a real blessing. I have received great support and motivation from the facilitators, who are always ready to answer any questions. It has been great over the years to belong to a most meaningful community, and meditation has now become something that I cherish."</p>
+        <div class="who">
+          <div class="pic pic-initial">A</div>
+          <div><div class="name">Anne</div><div class="meta">Member · Malaysia</div></div>
+        </div>
+      </article>
+      <article class="testi reveal d3">
+        <div class="quote-mark">“</div>
+        <p class="quote">"Being part of the Meditation Community has helped me establish a consistent practice that has positively influenced my life. I feel more present, more grateful, and better equipped to manage my emotions. Beyond the personal benefits, I have greatly valued the opportunity to connect with a community of like-minded people who support one another."</p>
+        <div class="who">
+          <div class="pic pic-initial">A</div>
+          <div><div class="name">Amy</div><div class="meta">Member · Australia</div></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="testi-rail" style="grid-template-columns:1fr; margin-top:22px">
+      <div class="feature-quote reveal d1">
+        <p class="big">"Thank you to the beautiful meditation teachers who created this meditation community and deliver the wonderful content that is going on in here."</p>
+        <div class="who" style="display:flex; align-items:center; gap:12px">
+          <div class="pic pic-initial" style="width:48px;height:48px">A</div>
+          <div style="text-align:left"><div class="name" style="font-weight:700">Amanda</div><div class="meta" style="font-size:.85rem;color:var(--ink-faint)">Member · Australia</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section class="section" id="pricing" data-screen-label="Pricing">
+  <div class="wrap">
+    <div style="text-align:center; max-width:700px; margin:0 auto">
+      <span class="eyebrow reveal">Membership</span>
+      <h2 class="h2 reveal d1" style="margin-top:14px">Start gently. Deepen when it feels right.</h2>
+      <p class="lead reveal d2" style="margin-top:16px">Begin completely free with Deep Relaxation. When you are ready, the Next Steps membership opens up live teaching, recordings, the Healing Circle and self-paced courses — all hosted on Skool.</p>
+    </div>
+
+    <div class="plans two" id="plans">
+      <!-- BEGIN FREE -->
+      <article class="plan reveal d1">
+        <div class="pname">Begin Free</div>
+        <div class="pdesc">Deep Relaxation — a proven foundation for regulating stress.</div>
+        <div class="price"><span class="amt">Free</span></div>
+        <div class="pdesc" style="margin-top:0">No experience required · No card</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Guided deep-relaxation practices</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Release tension &amp; quiet mental activity</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Supported by a like-minded community</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>The gentlest place to start</li>
+        </ul>
+        <a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener" class="btn btn-primary btn-block" data-magnetic>Join free on Skool</a>
+      </article>
+
+      <!-- NEXT STEPS (featured) -->
+      <article class="plan featured reveal">
+        <div class="ribbon">Next steps</div>
+        <div class="pname">Next Steps Membership</div>
+        <div class="pdesc">The full MbSM path with Dr Ian Gawler &amp; senior teachers.</div>
+        <div class="price"><span class="amt" style="font-size:2.2rem; letter-spacing:-.02em">The full path</span></div>
+        <div class="pdesc" style="margin-top:0">Current pricing shown on Skool</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Live teaching, discussion &amp; practice sessions</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Relaxation, mindfulness, meditation, imagery &amp; contemplation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Recordings of practices &amp; teachings</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>The Healing Circle</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Self-paced courses in the MbSM Method</li>
+        </ul>
+        <a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener" class="btn btn-white btn-block">Explore membership</a>
+      </article>
+    </div>
+
+    <div class="pricing-guarantee reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Start gently and deepen when it feels right
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq" style="background:linear-gradient(180deg,#fff,var(--sky-pale))" data-screen-label="FAQ">
+  <div class="wrap faq-grid">
+    <div>
+      <span class="eyebrow reveal">Questions</span>
+      <h2 class="h2 reveal d1" style="margin-top:14px">Everything you might be wondering.</h2>
+      <p class="lead reveal d2" style="margin-top:16px">Cannot find your answer here? <a href="#contact" class="link-arrow">Send us a message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">Do I need any experience to start?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">None at all. The free Deep Relaxation module is built for complete beginners — you will be guided every step of the way.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Is this religious or spiritual?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">No. The approach is practical and secular — Mindfulness-based Stillness Meditation, grounded in decades of teaching and a growing body of research.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">How much time does it take?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">As little as a few minutes a day to begin. Live morning sessions run 30 minutes — you take what fits your life.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">What if I cannot make the live sessions?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Members can access recordings of teachings and practices, so you are never locked to a timetable.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Can meditation help with stress and anxiety?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Many people come to us for exactly that. The practices are designed to support relaxation and steadiness — they complement, and do not replace, care from your own health professionals.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Who teaches?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">A community of experienced teachers led by Dr Ian Gawler and senior practitioners — you learn from many voices, not just one.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">What does it cost?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">It is free to start. Premium membership is $29/month for the full method, daily live sessions and recordings; an annual VIP option adds 1:1 mentoring. You can change or cancel anytime.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">How do I join?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Tap Start Free and you will begin on Skool — on the web or the app. No payment needed to start with Deep Relaxation.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact" data-screen-label="Contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow reveal">Contact us</span>
+      <h2 class="h2 reveal d1" style="margin-top:14px">We would love to hear from you.</h2>
+      <p class="lead reveal d2" style="margin-top:16px">A question about the community, the practices, or where to begin — send us a note and we will reply personally.</p>
+      <p class="reveal d2" style="margin-top:18px; color:var(--ink-faint)">Prefer email? Write to <a href="mailto:daniel@themeditationcommunity.org" class="link-arrow" style="display:inline">daniel@themeditationcommunity.org</a></p>
+    </div>
+    <form class="mc-form form-card reveal d1" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hp-field"><label>Do not fill this out: <input name="bot-field" /></label></p>
+      <div class="field-row">
+        <label class="field"><span>Name</span><input type="text" name="name" required placeholder="Your name" /></label>
+        <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com" /></label>
+      </div>
+      <label class="field"><span>Message</span><textarea name="message" rows="4" required placeholder="How can we help?"></textarea></label>
+      <button type="submit" class="btn btn-primary" data-magnetic>Send message</button>
+      <p class="form-success" hidden>Thank you — your message is on its way. We will be in touch soon.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="section final" data-screen-label="Final CTA">
+  <div class="cloud-divider top"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path fill="#ffffff" d="M0,70 C120,30 220,30 330,55 C430,78 520,40 640,52 C760,64 820,96 950,86 C1070,77 1140,44 1280,58 C1360,66 1410,78 1440,72 L1440,110 L0,110 Z"/></svg></div>
+  <div class="wrap">
+    <img class="orb-mark reveal" src="assets/icon-white.png" alt="The Meditation Community mark" />
+    <h2 class="h2 reveal d1">Your calmer life<br />starts with one breath…</h2>
+    <p class="lead reveal d2">Join hundreds of members learning, practicing and growing together with Mindfulness-based Stillness Meditation.<br />Free to begin — it takes about a minute.</p>
+    <div class="hero-cta reveal d2" style="justify-content:center; margin-top:8px">
+      <a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener" class="btn btn-white btn-lg" data-magnetic>Join the community free
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <p class="final-note reveal d2">No credit card · Begin free with Deep Relaxation · Deepen when you are ready</p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top">
+          <img src="assets/icon-white.png" alt="" style="width:40px;height:40px" />
+          <span class="brand-text" style="color:#fff">The Meditation Community<small>LEARN · PRACTICE · GROW</small></span>
+        </a>
+        <p class="about">A calmer way to live — learned, practiced, and grown together. Since 2021.</p>
+        <h4 style="margin-top:26px">Get a calm note each Sunday</h4>
+        <form class="newsletter" onsubmit="return false">
+          <input type="email" placeholder="you@email.com" aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#inside">What is inside</a></li>
+          <li><a href="#teachers">Teachers</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener">Deep Relaxation</a></li>
+          <li><a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener">Mindfulness</a></li>
+          <li><a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener">Meditation</a></li>
+          <li><a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener">Imagery</a></li>
+          <li><a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener">Contemplation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#become-a-teacher">Become a teacher</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#faq">FAQ &amp; support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 The Meditation Community · Privacy · Terms</div>
+      <div class="footer-social">
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.25 8.25h4.5V23h-4.5zM8.5 8.25h4.31v2.02h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.27c0-1.5-.03-3.42-2.08-3.42-2.08 0-2.4 1.63-2.4 3.31V23H8.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MOBILE CTA ===================== -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sc-text">Start free today<small>No card · Begin with Deep Relaxation</small></div>
+  <a href="https://www.skool.com/themeditationcommunity/about" target="_blank" rel="noopener" class="btn btn-primary">Join free</a>
+</div>
+
+<!-- ===================== TEACHER BIO MODAL ===================== -->
+<div class="tm-overlay" id="teacherModal" aria-hidden="true">
+  <div class="tm-card" role="dialog" aria-modal="true" aria-labelledby="tmName">
+    <div class="tm-photo"><img id="tmPhoto" alt="" /></div>
+    <div class="tm-body">
+      <button class="tm-close" id="tmClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></svg></button>
+      <div class="tm-role" id="tmRole"></div>
+      <div class="tm-name" id="tmName"></div>
+      <div class="tm-cred" id="tmCred"></div>
+      <div class="tm-text" id="tmText"></div>
+      <div class="tm-nav">
+        <button id="tmPrev" aria-label="Previous teacher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button id="tmNext" aria-label="Next teacher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
