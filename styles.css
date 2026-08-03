@@ -334,47 +334,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 12px; letter-spacing: .04em;
 }
 
-/* ===================== Breathe section (signature) ===================== */
-.breathe {
-  position: relative; overflow: hidden; color: #fff;
-  background: radial-gradient(120% 120% at 50% 0%, #1ea0f5 0%, #0a8de5 40%, #0a6bc0 100%);
-}
-.breathe .wrap { position: relative; z-index: 3; text-align: center; }
-.breathe .eyebrow { color: #d7ecff; }
-.breathe .eyebrow::before { background: linear-gradient(90deg, #fff, transparent); }
-.breathe h2 { color: #fff; max-width: 18ch; margin: 14px auto 14px; }
-.breathe .lead { color: #d9edff; max-width: 46ch; margin: 0 auto 8px; }
-
-.breath-stage { position: relative; display: grid; place-items: center; height: 460px; margin-top: 10px; }
-.breath-orb {
-  position: relative; width: 200px; height: 200px; border-radius: 50%;
-  display: grid; place-items: center; z-index: 3;
-  background: radial-gradient(circle at 40% 34%, #ffffff, #d4efff 35%, #7ec8ff 75%, #3aa6f0 100%);
-  box-shadow: inset 0 -14px 40px rgba(7,59,102,.3), inset 0 12px 30px rgba(255,255,255,.7), 0 20px 60px rgba(0,0,0,.18);
-  transition: transform 4000ms cubic-bezier(.37,0,.63,1), box-shadow 1200ms ease;
-}
-.breath-orb.in  { transform: scale(1.65); }
-.breath-orb.out { transform: scale(1); }
-.breath-glow {
-  position: absolute; width: 200px; height: 200px; border-radius: 50%; z-index: 2;
-  background: radial-gradient(circle, rgba(255,255,255,.55), transparent 60%);
-  transition: transform 4000ms cubic-bezier(.37,0,.63,1), opacity 4000ms;
-}
-.breath-glow.in { transform: scale(2.6); opacity: .9; }
-.breath-glow.out { transform: scale(1.2); opacity: .4; }
-.breath-label { margin-top: 6px; font-weight: 600; }
-.breath-phase { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; min-height: 1.6em; }
-.breath-count { font-size: .95rem; color: #cfe7ff; }
-.breath-controls { display: inline-flex; gap: 12px; margin-top: 8px; flex-wrap: wrap; justify-content: center; }
-.breath-pattern { display: inline-flex; gap: 6px; background: rgba(255,255,255,.14); padding: 5px; border-radius: var(--r-pill); margin-bottom: 6px; }
-.breath-pattern button { padding: 8px 16px; border-radius: var(--r-pill); color: #eaf6ff; font-weight: 700; font-size: .85rem; transition: background .3s, color .3s; }
-.breath-pattern button.active { background: #fff; color: var(--blue-deep); box-shadow: var(--shadow-sm); }
-
-/* tick ring */
-.breath-ring { position: absolute; width: 340px; height: 340px; z-index: 1; }
-.breath-ring circle { fill: none; stroke: rgba(255,255,255,.18); stroke-width: 2; }
-.breath-ring .prog { stroke: #fff; stroke-linecap: round; transition: stroke-dashoffset .3s linear; }
-
 /* ===================== Teachers ===================== */
 .teachers-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 52px; }
 .teacher { text-align: left; }
@@ -480,7 +439,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .footer { background: #07294a; color: #bcd4e8; padding-block: 70px 36px; }
 .footer a { color: #bcd4e8; transition: color .25s; }
 .footer a:hover { color: #fff; }
-.footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
+.footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
 .footer .brand { color: #fff; }
 .footer .brand .brand-text small { color: #7fb4e0; }
 .footer p.about { margin-top: 16px; font-size: .94rem; color: #8fb0cc; max-width: 30ch; }
@@ -638,6 +597,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* membership two-up */
 .plans.two { grid-template-columns: repeat(2, 1fr); max-width: 880px; margin-inline: auto; }
+
+/* membership single option */
+.plans.single { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
 
 /* teacher grid responsive (after base rules) */
 @media (max-width: 1080px) { .teachers-grid { grid-template-columns: repeat(4, 1fr); } }
