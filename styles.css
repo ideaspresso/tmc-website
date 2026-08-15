@@ -633,6 +633,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hp-field { position: absolute; left: -9999px; opacity: 0; height: 0; margin: 0; overflow: hidden; }
 .form-success { margin: 0; padding: 14px 18px; border-radius: 14px; background: var(--sky-pale, #eaf4fc);
   color: var(--blue-deep, #0a6bc0); font-weight: 600; font-size: .95rem; }
+.form-error { margin: 0; padding: 14px 18px; border-radius: 14px; background: #fdeceb;
+  color: #b42318; font-weight: 600; font-size: .95rem; }
+.form-error a { color: inherit; text-decoration: underline; }
+
+/* .newsletter sets its own row layout; .mc-form's column layout (for the two-field
+   card forms) comes later in the cascade and would otherwise override it. */
+.newsletter.mc-form { flex-direction: row; gap: 8px; }
 
 .form-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r-xl, 28px);
   padding: clamp(26px, 4vw, 40px); box-shadow: var(--shadow-sm); position: relative; }

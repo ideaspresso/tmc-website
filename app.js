@@ -232,19 +232,27 @@
 
 /* ===================== Netlify forms (AJAX submit) ===================== */
 document.querySelectorAll('form.mc-form').forEach(function (form) {
+  var btn = form.querySelector('button[type="submit"]');
+  var success = form.querySelector('.form-success');
+  var error = form.querySelector('.form-error');
+  var originalLabel = btn ? btn.textContent : '';
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var btn = form.querySelector('button[type="submit"]');
-    var success = form.querySelector('.form-success');
     var data = new URLSearchParams(new FormData(form)).toString();
+    if (error) error.hidden = true;
     if (btn) { btn.disabled = true; btn.textContent = 'Sending\u2026'; }
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: data
-    }).catch(function () {}).finally(function () {
-      form.querySelectorAll('.field-row, .field, button[type="submit"]').forEach(function (el) { el.style.display = 'none'; });
+    }).then(function (res) {
+      if (!res.ok) throw new Error('Form submission failed: ' + res.status);
+      form.querySelectorAll('.field-row, .field, input, button[type="submit"]').forEach(function (el) { el.style.display = 'none'; });
       if (success) success.hidden = false;
+    }).catch(function () {
+      if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
+      if (error) error.hidden = false;
     });
   });
 });
