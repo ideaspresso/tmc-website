@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Meditation Community//Healing Circles//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Australia/Melbourne
+BEGIN:STANDARD
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:AEST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19701004T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+TZNAME:AEDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:healing-circle-monthly@themeditationcommunity.org
+DTSTAMP:20261028T000000Z
+DTSTART;TZID=Australia/Melbourne:20261102T200000
+DTEND;TZID=Australia/Melbourne:20261102T204000
+RRULE:FREQ=MONTHLY;BYDAY=1MO;UNTIL=20291002T000000Z
+SUMMARY:Free Healing Circle — The Meditation Community
+LOCATION:https://zoom.us/j/93398960175?pwd=bdaETnl8lTpfs9qkQMuaYRbX9heXYO.1
+URL:https://themeditationcommunity.org/healing-circles
+DESCRIPTION:Join on Zoom: https://zoom.us/j/93398960175?pwd=bdaETnl8lTpfs9q
+ kQMuaYRbX9heXYO.1\nMeeting ID: 933 9896 0175\nPasscode: 951766\n\nPlease j
+ oin a few minutes early and find a quiet\, comfortable place.\n\nMore info
+ rmation: https://themeditationcommunity.org/healing-circles
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Healing Circle begins in 30 minutes
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
