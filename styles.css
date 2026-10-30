@@ -789,6 +789,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .hc-members-band p { color: var(--ink-soft); max-width: 54ch; margin: 0 auto 22px; line-height: 1.6; }
 
+@media (max-width: 480px) {
+  .hc-members-band .btn { white-space: normal; text-align: center; max-width: 100%; }
+}
+
 /* homepage promo band */
 .hc-promo {
   margin-top: 64px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;
