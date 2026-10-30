@@ -13,6 +13,27 @@
   onScrollNav();
   window.addEventListener("scroll", onScrollNav, { passive: true });
 
+  /* ---------- Mobile nav menu ---------- */
+  const navBurger = $("#navBurger");
+  const navMobile = $("#navMobileMenu");
+  if (navBurger && navMobile) {
+    const closeMenu = () => {
+      nav.classList.remove("menu-open");
+      navMobile.hidden = true;
+      navBurger.setAttribute("aria-expanded", "false");
+    };
+    const openMenu = () => {
+      nav.classList.add("menu-open");
+      navMobile.hidden = false;
+      navBurger.setAttribute("aria-expanded", "true");
+    };
+    navBurger.addEventListener("click", () => {
+      if (nav.classList.contains("menu-open")) closeMenu(); else openMenu();
+    });
+    $$("a", navMobile).forEach((a) => a.addEventListener("click", closeMenu));
+    window.addEventListener("resize", () => { if (window.innerWidth > 1040) closeMenu(); });
+  }
+
   /* ---------- Scroll reveal ---------- */
   const revs = $$(".reveal");
   if ("IntersectionObserver" in window && !reduce) {
